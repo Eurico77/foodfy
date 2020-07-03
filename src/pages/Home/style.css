@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #110c0c;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  background: rgb(0, 0, 0);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+}
+.logo-site {
+}
+
+.header a {
+  padding-left: 0px 40px;
+  margin-left: 25px;
+  color: rgb(252, 252, 252);
+}
+.header nav a:hover {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.header nav ul {
+  padding: 5px 31px 0 0;
+  margin-right: 50px;
+}
+
+.header .menu .logo-site #logo img {
+  width: 140px;
+  margin: 5px 15px;
+  padding: 10px 15px;
+}
+
+.menu-navigator {
+  display: flex;
+  padding: 10px;
+}
+
+.menu a {
+  padding-left: 5px;
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+
+.card-home {
+  padding: 5px;
+  margin: 7px;
+}
+
+.description-card {
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  background: rgba(255, 255, 255, 0.795);
+  width: 940px;
+  height: 366px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.description {
+  display: grid;
+}
+
+.description-revenue {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.description-revenue h1 {
+  font-size: 32px;
+  color: #fafafa;
+  padding: 20px 0 0;
+  margin-bottom: 15px;
+}
+
+.description-card-home {
+  margin: 0px 25px;
+  font-size: 16px;
+}
+
+.chef {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.chef img {
+  width: 216px;
+  height: 300px;
+}
+
+.description-card p {
+  margin: 0 auto;
+  padding: 0px 56px;
+  line-height: 20px;
+}
+
+.description p {
+  display: flex;
+  padding: 0px 56px;
+  line-height: 20px;
+}
