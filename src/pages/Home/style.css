@@ -9,7 +9,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #110c0c;
+  background: #f8f6f6;
 }
 
 .header {
@@ -17,33 +17,40 @@ body {
   flex-wrap: wrap;
   margin-bottom: 60px;
   padding-bottom: 30px;
-  background: rgb(0, 0, 0);
+ 
 }
 
 .menu {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
   align-items: center;
   padding: 10px;
   width: 100%;
   position: fixed;
 }
-.logo-site {
-}
+
 
 .header a {
   padding-left: 0px 40px;
   margin-left: 25px;
-  color: rgb(252, 252, 252);
+  color: rgb(0, 0, 0);
 }
+
 .header nav a:hover {
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(3, 3, 3);
   border-radius: 5px;
+  transition: 200ms;
 }
 
 .header nav ul {
   padding: 5px 31px 0 0;
   margin-right: 50px;
+}
+
+.header nav ul li a{
+  color: black;
+  padding: 10px;
 }
 
 .header .menu .logo-site #logo img {
@@ -57,12 +64,6 @@ body {
   padding: 10px;
 }
 
-.menu a {
-  padding-left: 5px;
-  color: aliceblue;
-  font-size: 1.2rem;
-}
-
 .card-home {
   padding: 5px;
   margin: 7px;
@@ -73,11 +74,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
-  background: rgba(255, 255, 255, 0.795);
+  background: rgba(235, 233, 233, 0.795);
   width: 940px;
   height: 366px;
   margin: 0 auto;
   border-radius: 30px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.74);
 }
 
 .description {
@@ -91,7 +93,7 @@ body {
 }
 .description-revenue h1 {
   font-size: 32px;
-  color: #fafafa;
+  color: #1f0101;
   padding: 20px 0 0;
   margin-bottom: 15px;
 }
@@ -124,3 +126,6 @@ body {
   padding: 0px 56px;
   line-height: 20px;
 }
+
+
+
