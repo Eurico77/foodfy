@@ -8,6 +8,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: #ffffff;
+  --text-a-black: black;
+  --primary-color: whitesmoke;
+  --description-card: rgba(0, 0, 0, 0.671);
+  --box-shadow-card: rgba(211, 211, 226, 0.767);
+  --hover-card: rgba(0, 0, 0, 0.61);
+  --image-url: url('../../assets/Component 3Foodfy.svg');
+}
+
+[data-theme="dark"] {
+  --background-color: #000000;
+  --text-a-black: rgb(255, 255, 255);
+  --primary-color: rgb(0, 0, 0);
+ 
+  --description-card: rgba(0, 0, 0, 0.671);
+  --box-shadow-card: rgba(56, 56, 56, 0.89);
+  --hover-card: rgba(167, 167, 167, 0.61);
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -15,7 +35,10 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #ffffff;
+  background: var(--background-color);
+}
+.image-url {
+  background-image: url('../../assets/Component 3Foodfy.svg');
 }
 
 .header {
@@ -52,8 +75,63 @@ body {
 }
 
 .header nav ul li a {
-  color: black;
+  color: var(--text-a-black);
   padding: 8px 38px;
+}
+.theme-switch-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: rgb(241, 237, 237);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #00e1ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#nigth {
 }
 
 .header .menu .logo-site #logo img {
@@ -69,7 +147,7 @@ body {
   justify-content: center;
 }
 
-.menu{
+.menu {
   padding: 0px 15px;
 }
 
@@ -88,12 +166,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
-  background: rgba(0, 0, 0, 0.671);
+  background: var(--description-card);
   width: 940px;
   height: 366px;
   margin: 0 auto;
   border-radius: 30px;
-  box-shadow: 10px 5px 5px rgba(211, 211, 226, 0.767);
+  box-shadow: 10px 5px 5px var(--box-shadow-card);
   transition: 800ms;
   color: whitesmoke;
 }
@@ -116,6 +194,7 @@ body {
   justify-content: space-around;
   align-items: flex-end;
 }
+
 .description-revenue h1 {
   font-size: 32px;
   color: #ffffff;
@@ -219,6 +298,7 @@ body {
   background: rgb(231, 226, 226);
   padding: 15px;
   margin-top: 15px;
+  color: black;
 }
 
 .final {

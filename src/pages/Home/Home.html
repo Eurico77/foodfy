@@ -15,17 +15,24 @@
     <header class="header">
         <div class="menu">
             <div class="logo-site">
-                <a id="logo" href="/"><img src="../../assets/Component 3Foodfy.svg" alt=""></a>
+                <a id="logo" href="/"><img class="logo" src="../../assets/Component 3Foodfy.svg" alt=""></a>
 
             </div>
 
             <nav>
                 <ul class="menu-navigator">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Receitas</a></li>
+                    <li><a href="../Home/Home.html">Home</a></li>
+                    <li><a href="../Revenue/Revenue.html">Receitas</a></li>
                     <li><a href="../Content/Content.html">Sobre</a></li>
                 </ul>
             </nav>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round" onclick="switchImage"></div>
+              </label>
+              <p>dark mode</p>
+            </div>
 
 
         </div>
@@ -149,5 +156,7 @@
 
 
 </body>
+
+<script src="../../javascript/index.js"></script>
 
 </html>
