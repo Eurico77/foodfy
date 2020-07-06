@@ -8,6 +8,34 @@
   box-sizing: border-box;
 }
 
+
+:root {
+
+  --background-color: #ffffff;
+  --text-a-black: black;
+  --primary-color: whitesmoke;
+  --description-card: rgba(0, 0, 0, 0.671);
+  --box-shadow-card: rgba(211, 211, 226, 0.767);
+  --hover-card: rgba(0, 0, 0, 0.61);
+  --transform-card: rgba(211, 211, 226, 0.767);
+  --card-food-shadow: rgb(192, 185, 185);
+  --footer-color: rgb(233, 230, 230);
+}
+
+[data-theme="dark"] {
+
+  --background-color: #020214;
+  --text-a-black: rgb(255, 255, 255);
+  --primary-color: rgb(0, 0, 0);
+  --description-card: rgba(61, 59, 59, 0.671);
+  --box-shadow-card: rgba(141, 139, 139, 0.548);
+  --hover-card: rgba(167, 167, 167, 0.363);
+  --transform-card: rgba(205, 205, 206, 0.253);
+  --card-food-shadow: rgba(146, 129, 129, 0.356);
+  --footer-color: rgb(56, 53, 53);
+}
+
+
 body {
   font-family: "Roboto", sans-serif;
   background: #ffffff;
