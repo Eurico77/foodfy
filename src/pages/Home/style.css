@@ -15,7 +15,7 @@
   --description-card: rgba(0, 0, 0, 0.671);
   --box-shadow-card: rgba(211, 211, 226, 0.767);
   --hover-card: rgba(0, 0, 0, 0.61);
-  --image-url: url('../../assets/Component 3Foodfy.svg');
+  
 }
 
 [data-theme="dark"] {
@@ -37,9 +37,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: var(--background-color);
 }
-.image-url {
-  background-image: url('../../assets/Component 3Foodfy.svg');
-}
+
 
 .header {
   display: flex;
@@ -78,6 +76,7 @@ body {
   color: var(--text-a-black);
   padding: 8px 38px;
 }
+
 .theme-switch-wrapper {
   display: flex;
   justify-content: center;
@@ -134,7 +133,7 @@ input:checked + .slider:before {
 #nigth {
 }
 
-.header .menu .logo-site #logo img {
+.header .menu .logo-site .logo img {
   display: flex;
   justify-content: center;
   width: 140px;

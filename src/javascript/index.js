@@ -2,17 +2,24 @@ const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]'
 );
 
-const skipImage = document.querySelector(
-    'logo'
-)
 
 
 
-function switchImage(e){
-    if (e.target.checked){
-        document.documentElement.
-    }
+
+
+function switchImage(e) {
+  if (e.target.checked) {
+    document.getElementById("logo").src = "../../assets/Component 2Foodfy.svg";
+    console.log("estou chegando");
+  } else {
+    document.getElementById("logo").src = "../../assets/Component 3Foodfy.svg";
+    console.log("tambem estou chegando");
+  }
 }
+
+toggleSwitch.addEventListener("change", switchImage, false);
+
+
 
 function switchTheme(e) {
   if (e.target.checked) {
