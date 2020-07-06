@@ -2,11 +2,6 @@ const toggleSwitch = document.querySelector(
   '.theme-switch input[type="checkbox"]'
 );
 
-
-
-
-
-
 function switchImage(e) {
   if (e.target.checked) {
     document.getElementById("logo").src = "../../assets/Component 2Foodfy.svg";
@@ -18,8 +13,6 @@ function switchImage(e) {
 }
 
 toggleSwitch.addEventListener("change", switchImage, false);
-
-
 
 function switchTheme(e) {
   if (e.target.checked) {
