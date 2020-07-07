@@ -14,6 +14,8 @@ function switchImage(e) {
 
 toggleSwitch.addEventListener("change", switchImage, false);
 
+
+
 function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
@@ -23,6 +25,8 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
+
+
 
 function switchTheme(e) {
   if (e.target.checked) {

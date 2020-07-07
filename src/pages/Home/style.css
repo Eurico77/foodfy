@@ -144,7 +144,7 @@ input:checked + .slider:before {
   margin-bottom: 5px;
 }
 
-.header .menu .logo-site .logo img {
+.header .menu .logo-site .logo-content img {
   display: flex;
   justify-content: center;
   width: 140px;
@@ -155,6 +155,8 @@ input:checked + .slider:before {
 .header .menu .logo-site #logo img a {
   display: flex;
   justify-content: center;
+  
+
 }
 
 .menu {
@@ -307,6 +309,23 @@ input:checked + .slider:before {
   font-weight: lighter;
   color: var(--text-a-black);
 }
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.modal {
+  background-color: white;
+  width: 35%;
+  height: 35%;
+  margin: 25vh auto;
+  border-radius: 12px;
+}
+
 
 .footer {
   display: flex;
