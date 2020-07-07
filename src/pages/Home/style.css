@@ -316,14 +316,26 @@ input:checked + .slider:before {
   height: 100%;
   position: fixed;
   top: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal {
   background-color: white;
-  width: 35%;
-  height: 35%;
+  width: 30%;
+  height: 30%;
   margin: 25vh auto;
   border-radius: 12px;
+  position: relative;
+}
+
+.modal .close-modal {
+  color: var(--text-a-black);
+  position: absolute;
+  bottom: 10px;
+  left: 25vh;
+
+  cursor: pointer;
 }
 
 
@@ -340,4 +352,9 @@ input:checked + .slider:before {
   display: inline;
   max-width: 100%;
   text-align: center;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }

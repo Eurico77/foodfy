@@ -14,8 +14,6 @@ function switchImage(e) {
 
 toggleSwitch.addEventListener("change", switchImage, false);
 
-
-
 function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
@@ -25,8 +23,6 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
-
-
 
 function switchTheme(e) {
   if (e.target.checked) {
@@ -48,4 +44,14 @@ if (currentTheme) {
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
   }
+}
+
+const modalOverlay = document.querySelector(".modal-overlay");
+const cards = document.querySelectorAll(".card");
+const closeModal = document.querySelector(".close-modal");
+
+for (card of cards) {
+  card.addEventListener("click", function () {
+    modalOverlay.classList.add("active");
+  });
 }
